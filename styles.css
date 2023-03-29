@@ -1,0 +1,54 @@
+body {
+    height: 100px;
+}
+
+.wrapper {
+    display: grid;
+}
+
+.hakone {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.instructions {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 50px;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: blue;
+}
+
+.title {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 50px;
+    display: flex;
+    align-items: end;
+}
+
+.signup_form {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    grid-column-start: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: aqua;
+}
+
+.buttons {
+    padding: 50px;
+    grid-column-start: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: brown;
+}
