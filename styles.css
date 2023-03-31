@@ -3,9 +3,11 @@ p {
 }
 
 body {
-    height: 100px;
-    background-color: black;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: white;
+    margin: -5px;
 }
 
 .wrapper {
@@ -13,14 +15,17 @@ body {
 }
 
 img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    /* height: 100%;
+    width: 100%; */
+    /* object-fit: cover; */
+    /* display: block; */
 }
 
 .hakone {
     width: 35vw;
     height: 100vh;
+    background-image: url(images/small-syuhei-inoue-kaoHI0iHJPM-unsplash.jpg);
+    background-size: cover;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -72,13 +77,14 @@ input {
 }
 
 .buttons {
-    padding: 50px;
+    padding-top: 50px;
+    padding-left: -50px;
+    padding-right: -50px;
     grid-column-start: 3;
     grid-row-start: 4;
     grid-row-end: 5;
-    background-color: rgb(10, 10, 10)
+    /* background-color: red */
 }
-
 
 button {
   background-color: #13aa52;
