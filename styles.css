@@ -4,8 +4,8 @@ p {
 
 body {
     background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to left, #313030, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #313030, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: white;
     margin: -5px;
 }
@@ -74,7 +74,23 @@ input {
     margin-right: 50px;
     margin-top: 15px;
     width: 275px;
+    border-color: #E5E7EB;
+    border-radius: 4px;
 }
+
+input:focus {
+    background-color: lightgreen;
+}
+
+input:focus:invalid {
+    background-color: lightcoral;
+}
+
+input:valid {
+    border-color: green;
+}
+
+
 
 .buttons {
     padding-top: 50px;
